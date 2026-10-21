@@ -8,7 +8,9 @@
 </head>
 <body>
     <div class="first-row">
-        <h1>google 翻譯</h1>
+        <div class="title">
+            <h1>google 翻譯</h1>  
+        </div>
         <div class="tools">
             <button>主題</button>
             <button>設定</button>
@@ -16,13 +18,15 @@
             <button>帳號</button>
         </div>
     </div>
-    <div class="second-row">
-        <button>文字</button>
-        <button>圖片</button>
-        <button>文件</button>
-        <button>網站</button>
-    </div>
     <div class="third-row">
+        <div class="second-row">
+            <div>
+                <button>文字</button>
+                <button>圖片</button>
+                <button>文件</button>
+                <button>網站</button>
+            </div>
+        </div>
         <div class="in-total">
             <div class="in-tools">
                 <button>偵測語言</button>
@@ -33,8 +37,8 @@
             </div>
             <div class="in">
                 <input type="text" placeholder="輸入內容">
-                <button>麥克風</button>
-                <button>其他輸入方式</button>
+                <button class="mic">麥克風</button>
+                <button class="other">其他輸入方式</button>
             </div>
         </div>
         <div class="changer">
@@ -54,18 +58,22 @@
                 <input type="text" placeholder="翻譯">
             </div>
         </div>
+        <div class="comment">
+            <p>提供意見</p>
     </div>
-    <div class="comment">
-        <p>提供意見</p>
     </div>
     <div class="sixth-row">
         <div class="history">
-            <button>翻譯紀錄</button>
-            <p>翻譯紀錄</p>
+            <div class="hisfam">
+                <button>翻譯紀錄</button>
+                <p>翻譯紀錄</p>
+            </div>
         </div>
         <div class="saved">
-            <button>已儲存</button>
-            <p>已儲存</p>
+            <div class="safam">
+                <button>已儲存</button>
+                <p>已儲存</p>
+            </div>
         </div>
     </div>
 </body>

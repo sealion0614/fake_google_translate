@@ -1,42 +1,101 @@
 div{
-    border:3px solid;
-    margin:3%;
-    background-color: oklch(93.09% 0.02833 152.099);
+    margin:10px;
+    white-space: nowrap; 
 }
 .first-row{
+    margin:0;
     position:relative;
 }
-.first-row h1,.first-row div{
-    display:inline-block;
+.h1{
+    display:inline;
 }
-.first-row div{
+.title{
+    display:inline-block;
+    position:relative;
+}
+.tools{
+    display:inline-block;
     position:absolute;
-    right:0;
-    top:47%;
-    transform: translate(0,-50%);
+    margin:0;
+    top:50%;
+    left:93%;
+    transform: translate(-50%,-50%);
+    white-space: nowrap;
 }
-.third-row >*{
-    display:inline-block;
-    vertical-align: top;
+.third-row{
+    position:relative;
+    width:85vw;
+    left:50vw;
+    transform: translate(-50%,0);
 }
 .in-total,.out-total{
-    display:inline-block;
+    position:relative;
+    display: inline-block;
+    width:40vw;
+    height: 25vh;
     vertical-align: top;
 }
+.out-tools{
+    transform: translate(5%,0);
+}
 input{
-    display: block;
+    position:relative;
+    height:100%;
+    width:100%;
 }
-.in input{
+.in button{
+    position: absolute;
+    top:95%;
+    transform: translate(-50%,-50%);
+}
+.in .mic{
+    left:7%;
+}
+.in .other{
+    left:90%;
+}
+.in,.out{
+    position:relative;
     height:20vh;
-    width:40vw;
-}
-.out input{
-    height:22.5vh;
-    width:40vw;
 }
 .changer{
-    height:30.3vh;
+    position: absolute;
+    display:inline-block;
+    left:48.3%;
+    transform: translate(-50%,0);
+    vertical-align: top;
 }
 .comment{
     text-align: end;
+    transform: translate(-2%,0);
+}
+.history,.saved{
+    position:relative;
+    display:inline-block;
+    width:48%;
+    height:20vh;
+    vertical-align: top;
+}
+.hisfam{
+    position:absolute;
+    margin:0;
+    top:50%;
+    left:90%;
+    transform: translate(-50%,-50%);
+} 
+.safam{
+    position:absolute;
+    margin:0;
+    top:50%;
+    left:10%;
+    transform: translate(-50%,-50%);
+} 
+
+.hisfam button,.safam button{
+    width:10vh;
+    height:10vh;
+    border-radius: 50%;
+}
+.hisfam p,.safam p{
+    text-align: center;
 }
