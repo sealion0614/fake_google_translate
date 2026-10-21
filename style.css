@@ -1,0 +1,42 @@
+div{
+    border:3px solid;
+    margin:3%;
+    background-color: oklch(93.09% 0.02833 152.099);
+}
+.first-row{
+    position:relative;
+}
+.first-row h1,.first-row div{
+    display:inline-block;
+}
+.first-row div{
+    position:absolute;
+    right:0;
+    top:47%;
+    transform: translate(0,-50%);
+}
+.third-row >*{
+    display:inline-block;
+    vertical-align: top;
+}
+.in-total,.out-total{
+    display:inline-block;
+    vertical-align: top;
+}
+input{
+    display: block;
+}
+.in input{
+    height:20vh;
+    width:40vw;
+}
+.out input{
+    height:22.5vh;
+    width:40vw;
+}
+.changer{
+    height:30.3vh;
+}
+.comment{
+    text-align: end;
+}
