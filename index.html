@@ -3,10 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link id="css-in" rel="stylesheet">
     <title>假的google translate</title>
 </head>
 <body>
+    <select>
+        <option value="no-css">沒有任何美化</option>
+        <option value="no-layout">沒有排版系統版</option>
+        <option value="flex">flex</option>
+        <option value="grid">grid</option>
+    </select>
     <div class="first-row">
         <div class="title">
             <h1>google 翻譯</h1>  
@@ -20,47 +26,57 @@
     </div>
     <div class="third-row">
         <div class="second-row">
-            <div>
-                <button>文字</button>
-                <button>圖片</button>
-                <button>文件</button>
-                <button>網站</button>
+            <div class="real-tool">
+                <div>
+                    <button>文字</button>
+                    <button>圖片</button>
+                    <button>文件</button>
+                    <button>網站</button>
+                </div>
+            </div>
+            <div class="fake-tool">
+
             </div>
         </div>
-        <div class="in-total">
-            <div class="in-tools">
-                <button>偵測語言</button>
-                <button>日文</button>
-                <button>中文(簡體)</button>
-                <button>英文</button>
-                <button>更多</button>
+        <div class="input-and-output">
+            <div class="changer">
+                <div>
+                    <button>交換</button>
+                </div>
             </div>
-            <div class="in">
-                <input type="text" placeholder="輸入內容">
-                <button class="mic">麥克風</button>
-                <button class="other">其他輸入方式</button>
+            <div class="in-total">
+                <div class="in-tools">
+                    <button>偵測語言</button>
+                    <button>日文</button>
+                    <button>中文(簡體)</button>
+                    <button>英文</button>
+                    <button>更多</button>
+                </div>
+                <div class="in">
+                    <input type="text" placeholder="輸入內容">
+                    <div class="in-inputs">
+                        <button class="mic">麥克風</button>
+                        <button class="other">其他輸入方式</button>
+                    </div>
+                </div>
+            </div>
+            <div class="out-total">
+                <div class="out-tools">
+                    <div></div>
+                    <button>偵測語言</button>
+                    <button>日文</button>
+                    <button>中文(簡體)</button>
+                    <button>英文</button>
+                    <button>更多</button>
+                </div>
+                <div class="out">
+                    <input type="text" placeholder="翻譯">
+                </div>
+                <div class="comment">
+                    <p>提供意見</p>
+                </div>
             </div>
         </div>
-        <div class="changer">
-            <div>
-                <button>交換</button>
-            </div>
-        </div>
-        <div class="out-total">
-            <div class="out-tools">
-                <button>偵測語言</button>
-                <button>日文</button>
-                <button>中文(簡體)</button>
-                <button>英文</button>
-                <button>更多</button>
-            </div>
-            <div class="out">
-                <input type="text" placeholder="翻譯">
-            </div>
-        </div>
-        <div class="comment">
-            <p>提供意見</p>
-    </div>
     </div>
     <div class="sixth-row">
         <div class="history">
@@ -76,5 +92,6 @@
             </div>
         </div>
     </div>
+    <script src="js.js"></script>
 </body>
 </html>

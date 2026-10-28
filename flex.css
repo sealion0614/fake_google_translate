@@ -1,0 +1,113 @@
+body{
+    display:flex;
+    flex-direction: column;
+}
+/* div{
+    margin:10px;
+    background-color: oklch(91.764% 0.03992 172.822);
+    border:oklch(50% 0.5 172.822) solid 3px;
+} */
+div{
+margin:10px;
+margin-bottom: 0;
+}
+.first-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.third-row{
+    display:flex;
+    flex-direction: column;
+}
+.tool-row{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+.in-tools,.changer,.out-tools{
+    display:inline-block;
+}
+.input-and-output{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.in{
+    display: flex;
+    flex-direction: column;
+}
+.in-inputs{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.in,.out{
+    display: flex;
+    height:20vh;
+}
+.in-total,.out-total{
+    width:40vw;
+}
+input{
+    flex-grow:1;
+    flex-shrink: 1;
+}
+.second-row{
+    display: flex;
+    justify-content:flex-start;
+}
+.comment{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.comment p{
+    margin:0;
+}
+.sixth-row{
+    display:flex;
+    justify-content: center;
+}
+.sixth-row button{
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+}
+.hisfam,.safam{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.changer{
+    position: absolute;
+    
+}
+.real-tool,.fake-tool{
+    width:40vw;
+}
+.second-row{
+    display: flex;
+    justify-content: center;
+}
+.in input{
+    border:0;
+}
+.in{
+    border:1px solid oklch(54.517% 0.00006 271.152);
+    border-radius:2%;
+    overflow: hidden;
+}
+.in-total,.real-tool{
+    margin-right: 0;
+}
+.out-total,.fake-tool{
+    margin-left: 0;
+}
+.in-tools,.out-tools{
+    display: flex;
+    width:auto;
+    white-space: nowrap;
+}
+.out-tools div{
+    width:20px;
+}
